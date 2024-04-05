@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3caffaestoragef816c0ed",
+  "bucketName": "caffae-storage-f816c0ed",
+  "policyUUID": "69064fbd",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "READ",
+    "CREATE_AND_UPDATE",
+    "DELETE"
+  ]
+}

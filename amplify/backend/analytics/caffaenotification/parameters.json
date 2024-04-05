@@ -1,0 +1,21 @@
+{
+    "appName": "caffaenotification",
+    "roleName": "pinpointLambdaRole5b2ce74b",
+    "cloudformationPolicyName": "cloudformationPolicy5b2ce74b",
+    "cloudWatchPolicyName": "cloudWatchPolicy5b2ce74b",
+    "pinpointPolicyName": "pinpointPolicy5b2ce74b",
+    "authPolicyName": "pinpoint_amplify_5b2ce74b",
+    "unauthPolicyName": "pinpoint_amplify_5b2ce74b",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

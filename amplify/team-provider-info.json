@@ -1,0 +1,41 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-caffae-dev-151258-authRole",
+      "UnauthRoleArn": "arn:aws:iam::754365649735:role/amplify-caffae-dev-151258-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::754365649735:role/amplify-caffae-dev-151258-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-caffae-dev-151258-deployment",
+      "UnauthRoleName": "amplify-caffae-dev-151258-unauthRole",
+      "StackName": "amplify-caffae-dev-151258",
+      "StackId": "arn:aws:cloudformation:ap-south-1:754365649735:stack/amplify-caffae-dev-151258/566e7230-9fe5-11ee-9184-0afe9959694a",
+      "AmplifyAppId": "d3owm2wo5fh9nq"
+    },
+    "categories": {
+      "auth": {
+        "caffaebe1be664": {}
+      },
+      "storage": {
+        "s3caffaestoragef816c0ed": {}
+      },
+      "api": {
+        "caffae": {}
+      },
+      "analytics": {
+        "caffaenotification": {},
+        "Pinpoint": {
+          "Name": "caffaenotification-dev",
+          "Id": "23e6161dab6c46848b55fde344fefe5a",
+          "Region": "ap-south-1"
+        }
+      },
+      "notifications": {
+        "Pinpoint": {
+          "Name": "caffaenotification-dev",
+          "Id": "23e6161dab6c46848b55fde344fefe5a",
+          "Region": "ap-south-1"
+        }
+      }
+    }
+  }
+}

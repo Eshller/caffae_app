@@ -1,0 +1,114 @@
+type CallingModel @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  callerId: String
+  callerName: String
+  callerPic: String
+  receiverId: String
+  receiverName: String
+  receiverPic: String
+  callId: String
+  hasDialled: Boolean
+  callType: Boolean
+  timestamp: String
+  pushToken: String
+}
+
+type PaymentHistory @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  senderId: String
+  senderName: String
+  senderPic: String
+  receiverId: String
+  receiverName: String
+  receiverPic: String
+  date: String
+  time: String
+  amount: String
+}
+
+type CaffaeWallet @model @auth(rules: [{allow: public, operations: [create, read, update]}]) {
+  id: ID!
+  userId: String
+  username: String
+  profilePic: String
+  totalPoints: String
+  phoneNumber: String
+}
+
+type ReviewsModel @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  senderId: String
+  recieverId: String
+  rating: Int
+  message: String
+  senderName: String
+}
+
+type MeetingModel @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  senderId: String
+  receiverId: String
+  senderName: String
+  receiverPic: String
+  receiverName: String
+  date: String
+  time: String
+  isAccept: Boolean
+  isAudio: Boolean
+  isVideo: Boolean
+  isDone: Boolean
+  isDonePayment: Boolean
+  isDecline: Boolean
+  senderPic: String
+}
+
+type FeesCharge {
+  audioCall: String
+  videoCall: String
+  isChat: String
+}
+
+type GuruModel @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  documentId: String
+  username: String
+  phoneNumber: String
+  totalRating: Float
+  qualification: String
+  experience: String
+  imageUrl: String
+  specialist: String
+  joiningTime: String
+  unAvailableFrom: String
+  unAvailableTo: String
+  timeFrom: String
+  timeTo: String
+  pushToken: String
+  feesCharge: FeesCharge
+  listExplore: [String]
+  createdAt: String
+  yearOfExprience: String
+  isOnline: String
+  about: String
+  name: String
+  email: String
+  callNumber: String
+}
+
+type UserModel @model @auth(rules: [{allow: public}, {allow: owner}, {allow: private, operations: [create, read], provider: iam}]) {
+  id: ID!
+  username: String
+  phoneNumber: String
+  createdAt: String
+  isVerified: Boolean
+  isGuru: Boolean
+  listExplore: [String]
+  photoUrl: String
+  role: String
+  documentId: String
+  pushToken: String
+  name: String
+  email: String
+  callNumber: String
+}
+ 

@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "caffae",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authcaffaebe1be664",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

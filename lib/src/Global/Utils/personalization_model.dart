@@ -1,0 +1,1 @@
+class Per {  final String name;  Per({required this.name});}List<Per> per = [  Per(name: 'Music'),  Per(name: 'Art'),  Per(name: 'Theatre'),  Per(name: 'Writing'),  Per(name: 'Cooking'),  Per(name: 'Dancing'),  Per(name: 'Web Dev'),  Per(name: 'UI/UX'),  Per(name: 'AI/ML'),  Per(name: 'Sports'),  Per(name: 'Astronomy'),  Per(name: 'Others'),];
